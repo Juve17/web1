@@ -5,8 +5,30 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HamsterParadise 🐹 - El rincón feliz de tu pequeño amigo</title>
-    <!-- Tailwind CSS CDN --> 
-    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        hamster: {
+                            50: '#fcf8f2',
+                            100: '#f6ebd9',
+                            200: '#ebd4b1',
+                            300: '#dfb77e',
+                            400: '#d3994f',
+                            500: '#c5802c',
+                            600: '#a66522',
+                            700: '#844f1c',
+                            800: '#6b3f1b',
+                            900: '#583419',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
     <!-- FontAwesome Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <!-- Google Fonts Inter & Poppins -->
@@ -63,7 +85,11 @@
             animation: wheelSpin 8s linear infinite;
         }
 
-        
+        .glass-card {
+            background: rgba(255, 255, 255, 0.75);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.5);
+        }
     </style>
 </head>
 
